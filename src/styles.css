@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+	/* Variables */
+	--background: #090909;
+	--text: #f8f8ff;
+	--accent: #4b327c;
+
+	margin: 0;
+	padding: 0;
+	color: var(--text);
+	font-family: 'Montserrat', sans-serif;
+}
