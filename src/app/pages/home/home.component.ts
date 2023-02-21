@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Link } from 'src/app/models/link.model';
+import { Member } from 'src/app/models/member.model';
 
 @Component({
 	selector: 'app-home',
@@ -34,12 +35,51 @@ export class HomeComponent implements OnInit {
 			iconAlt: 'Twitch Icon'
 		},
 	];
+	public members: Member[] = [
+		{
+			name: 'Jackson',
+			picture: 'assets/pfps/jackson.png',
+			link: 'https://twitter.com/lavaskin_trade',
+			rank: '',
+		},
+		{
+			name: 'Nikko',
+			picture: 'assets/pfps/nikko.png',
+			link: 'https://www.youtube.com/@tut_bot',
+			rank: '',
+		},
+		{
+			name: 'Tanner',
+			picture: 'assets/pfps/tanner.png',
+			link: 'https://www.youtube.com/@nigubeanchinchug',
+			rank: '',
+		},
+		{
+			name: 'Dillyn',
+			picture: 'assets/pfps/dillyn.png',
+			link: 'https://youtu.be/DA7wDV4MbNo',
+			rank: '',
+		},
+	]
 	
 	constructor() { }
 
-	ngOnInit(): void { }
+	ngOnInit(): void {
+		// Randomize the ranks of the members
+		let ranks = ['Host', 'Co-Host', 'Special Guest', 'Special Guest'];
+		for (let i = this.members.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[this.members[i], this.members[j]] = [this.members[j], this.members[i]];
+		}
+
+		// Assign the ranks to the members
+		this.members.forEach((member, index) => {
+			member.rank = ranks[index];
+		});
+	}
 
 	openLink(url: string): void {
+		if (url === '') return;
 		window.open(url, '_blank');
 	}
 }

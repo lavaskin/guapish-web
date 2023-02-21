@@ -13,8 +13,17 @@
 	</div>
 
 	<div class="bottom">
-		<div class="about">About us!</div>
-		<p>...</p>
+		<div class="about-header">About <b>GUAPISH</b></div>
+		
+		<div class="members">
+			<div class="member" *ngFor="let m of members">
+				<p>{{ m.name }}</p>
+				<img src="{{m.picture}}" 
+					alt="{{m.name}} Profile Picture"
+					(click)="openLink(m.link)">
+				<p>{{ m.rank }}</p>
+			</div>
+		</div>
 	</div>
 
 </div>
