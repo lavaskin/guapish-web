@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-	color: var(--accent);
+	color: var(--accent-1);
 }
 
 .active-link {
@@ -34,7 +34,7 @@ a:hover {
 	border-radius: 3px 3px 0 0;
 }
 .active-link:hover {
-	border-top: 3px solid var(--accent);
+	border-top: 3px solid var(--accent-1);
 	border-radius: 0;
 }
 
