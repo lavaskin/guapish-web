@@ -3,6 +3,13 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 4rem;
+	height: 80vh;
+}
+
+.bottom {
+	background-image: url('../../../assets/static-background.jpg');
+	min-height: 85vh;
+	padding: 3rem;
 }
 
 .logo {
@@ -18,8 +25,28 @@
 .link {
 	background: none;
 	border: none;
+	transition: 0.25s;
+}
+
+.link:hover {
+	cursor: pointer;
+	transform: scale(1.15);
+
+	box-shadow: 0 0 0.75rem 1rem var(--accent-2);
+	background-color: var(--accent-2);
+	border-radius: 50%;
 }
 
 .link-icon {
 	height: 4rem;
+}
+
+@media screen and (max-width: 650px) {
+	.links {
+		gap: 2rem;
+	}
+
+	.link-icon {
+		height: 2.7rem;
+	}
 }
