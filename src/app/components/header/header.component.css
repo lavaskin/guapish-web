@@ -42,4 +42,8 @@ a:hover {
 	a {
 		font-size: 1.25rem;
 	}
+
+	.links {
+		gap: 2rem;
+	}
 }

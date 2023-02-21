@@ -1,9 +1,25 @@
-.page {
+.top {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 4rem;
 }
 
-img {
-	width: 70%;
+.logo {
+	width: 65%;
+	max-width: 60rem;
+}
+
+.links {
+	display: flex;
+	gap: 3rem;
+}
+
+.link {
+	background: none;
+	border: none;
+}
+
+.link-icon {
+	height: 4rem;
 }

@@ -1,3 +1,14 @@
 <div class="page">
-	<img src="./assets/logo.png" alt="">
+
+	<div class="top">
+		<img class="logo" src="./assets/logo.png" alt="">
+
+		<div class="links">
+			<div *ngFor="let link of links">
+				<button class="link" (click)="openLink(link.url)">
+					<img class="link-icon" src="{{link.iconPath}}" alt="{{link.iconAlt}}">
+				</button>
+			</div>
+		</div>
+	</div>
 </div>
