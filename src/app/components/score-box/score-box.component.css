@@ -1,0 +1,43 @@
+.score-box {
+	width: 7rem;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+input {
+	height: 7rem;
+	border: none;
+	border-radius: 0;
+	text-align: center;
+	color: black;
+	font-size: 3.5rem;
+	text-transform: uppercase;
+}
+
+button {
+	border: none;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	transition: 0.25s;
+}
+
+.plus {
+	background-color: green;
+	margin-bottom: 0.5rem;
+}
+
+.minus {
+	background-color: red;
+	margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+	.score-box {
+		width: 5rem;
+	}
+
+	input {
+		height: 5rem;
+	}
+}

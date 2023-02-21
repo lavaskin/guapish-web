@@ -1,1 +1,12 @@
-<p>ranker works!</p>
+<div class="page">
+	
+	<div class="score-boxes">
+		<app-score-box (rankOutput)="updateScores(0, $event)"></app-score-box>
+		<app-score-box (rankOutput)="updateScores(1, $event)"></app-score-box>
+		<app-score-box (rankOutput)="updateScores(2, $event)"></app-score-box>
+		<app-score-box (rankOutput)="updateScores(3, $event)"></app-score-box>
+	</div>
+
+	<div class="rank">{{ displayedRank }}</div>
+
+</div>
