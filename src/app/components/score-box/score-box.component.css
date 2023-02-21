@@ -23,12 +23,12 @@ button {
 }
 
 .plus {
-	background-color: green;
+	background-color: var(--accent-1);
 	margin-bottom: 0.5rem;
 }
 
 .minus {
-	background-color: red;
+	background-color: var(--accent-2);
 	margin-top: 0.5rem;
 }
 
