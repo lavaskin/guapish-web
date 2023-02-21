@@ -12,6 +12,8 @@ export class RankerComponent implements OnInit {
 	private validScores = ['F-', 'F', 'F+', 'D-', 'D', 'D+', 'C-', 'C', 'C+', 'B-', 'B', 'B+', 'A-', 'A', 'A+', 'S-', 'S', 'S+'];
 	private scoreValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
 
+	public showDialog: boolean = false;
+
 	constructor() { }
 
 	ngOnInit(): void { }
@@ -23,6 +25,11 @@ export class RankerComponent implements OnInit {
 		const validScores = this.scores.filter(score => score !== -1);
 		const average = Math.round(validScores.reduce((a, b) => a + b, 0) / validScores.length);
 		this.displayedRank = this.validScores[average];
+	}
+
+	public reset() {
+		this.scores = [-1, -1, -1, -1];
+		this.displayedRank = '';
 	}
 
 	private validateScore(score: string): boolean {

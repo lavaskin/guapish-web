@@ -7,9 +7,41 @@
 	margin-bottom: 3rem;
 }
 
-.rank {
+.bottom {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem
+}
+
+.rank {
 	font-size: 5rem;
 	color: gold;
+}
+
+.buttons {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.btn {
+	padding: 0.5rem;
+	font-size: 1.25rem;
+	border-radius: 0.5rem;
+	border: none;
+}
+
+.reset-btn {
+	background-color: var(--accent-1);
+}
+
+.help-btn {
+	background-color: var(--accent-2);
+}
+
+.help {
+	max-width: 50rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem
 }

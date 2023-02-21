@@ -1,0 +1,13 @@
+<div class="background" *ngIf="show">
+	<div class="dialog">
+		<div class="top">
+			<div class="title">{{title}}</div>
+			<button class="close" (click)="close()">
+				<img class="close-icon" src="./assets/icons/close.svg" alt="X">
+			</button>
+		</div>
+
+		<ng-content></ng-content>
+	
+	</div>
+</div>
