@@ -7,36 +7,20 @@
 	margin-bottom: 3rem;
 }
 
-.bottom {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 3rem
-}
-
 .rank {
+	display: flex;
+	justify-content: center;
 	font-size: 5rem;
 	color: gold;
 }
-
-.buttons {
-	display: flex;
-	gap: 0.5rem;
-}
-
-.btn {
-	padding: 0.5rem;
-	font-size: 1.25rem;
-	border-radius: 0.5rem;
-	border: none;
-}
-
-.reset-btn {
-	background-color: var(--accent-1);
-}
-
 .help-btn {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
 	background-color: var(--accent-2);
+	font-size: 3.5rem;
+	border-radius: 50%;
+	padding: 0 1.2rem;
 }
 
 .help {

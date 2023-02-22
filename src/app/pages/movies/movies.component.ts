@@ -8,7 +8,7 @@ import MoviesList from 'src/app/data/movies';
 })
 export class MoviesComponent implements OnInit {
 	// To show
-	public movies = MoviesList.reverse();
+	public movies = MoviesList;
 	
 	constructor() { }
 
