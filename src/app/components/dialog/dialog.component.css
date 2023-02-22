@@ -1,0 +1,48 @@
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dialog {
+	width: wrap-content;
+	height: wrap-content;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	background-color: var(--background);
+	box-shadow: 0 0 0.5rem var(--accent-1);
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: 500;
+	padding-right: 1rem;
+}
+
+.close {
+	font-size: 1.5rem;
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+
+.close-icon {
+	height: 1.25rem;
+}

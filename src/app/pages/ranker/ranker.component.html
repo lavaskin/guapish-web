@@ -7,6 +7,21 @@
 		<app-score-box (rankOutput)="updateScores(3, $event)"></app-score-box>
 	</div>
 
-	<div class="rank">{{ displayedRank }}</div>
+	<div class="bottom">
+		<div class="rank" *ngIf="displayedRank !== ''">{{ displayedRank }}</div>
+
+		<div class="buttons">
+			<!-- <button class="btn reset-btn" (click)="reset()">Reset</button> -->
+			<button class="btn help-btn" (click)="showDialog = true">Help</button>
+		</div>
+	</div>
+
+	<app-dialog [(show)]="showDialog" [title]="'Help'">
+		<div class="help">
+			<p>This is a tool for getting the average rank of movies we watch.</p>
+			<p>Each movie can range from F- to S+ (All letter ranks being F, D, C, B, A, S).</p>
+			<p>Type in a letter in the boxes and then click the corresponding buttons to +/- that boxes ranking.</p>
+		</div>
+	</app-dialog>
 
 </div>

@@ -13,6 +13,8 @@ import { MoviesComponent } from './pages/movies/movies.component';
 // Partials
 import { HeaderComponent } from './components/header/header.component';
 import { ScoreBoxComponent } from './components/score-box/score-box.component';
+import { DialogComponent } from './components/dialog/dialog.component';
+import { MovieComponent } from './components/movie/movie.component';
 
 @NgModule({
 	declarations: [
@@ -21,7 +23,9 @@ import { ScoreBoxComponent } from './components/score-box/score-box.component';
 		RankerComponent,
 		MoviesComponent,
 		HeaderComponent,
-		ScoreBoxComponent
+		ScoreBoxComponent,
+		DialogComponent,
+		MovieComponent
 	],
 	imports: [
 		BrowserModule,

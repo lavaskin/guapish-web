@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import MoviesList from 'src/app/data/movies';
 
 @Component({
 	selector: 'app-movies',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
+	public movies = MoviesList;
+	
 	constructor() { }
 
 	ngOnInit(): void { }

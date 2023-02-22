@@ -1,3 +1,29 @@
 <div class="page">
-	<img src="./assets/logo.png" alt="">
+
+	<div class="top">
+		<img class="logo" src="./assets/logo.png" alt="">
+
+		<div class="links">
+			<div *ngFor="let link of links">
+				<button class="link" (click)="openLink(link.url)">
+					<img class="link-icon" src="{{link.iconPath}}" alt="{{link.iconAlt}}">
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottom">
+		<div class="about-header">About <b>GUAPISH</b></div>
+		
+		<div class="members">
+			<div class="member" *ngFor="let m of members">
+				<p>{{ m.name }}</p>
+				<img src="{{m.picture}}" 
+					alt="{{m.name}} Profile Picture"
+					(click)="openLink(m.link)">
+				<p>{{ m.rank }}</p>
+			</div>
+		</div>
+	</div>
+
 </div>

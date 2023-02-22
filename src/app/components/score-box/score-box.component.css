@@ -1,17 +1,17 @@
 .score-box {
-	width: 7rem;
+	width: 10rem;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 }
 
 input {
-	height: 7rem;
+	height: 10rem;
 	border: none;
 	border-radius: 0;
 	text-align: center;
 	color: black;
-	font-size: 3.5rem;
+	font-size: 5rem;
 	text-transform: uppercase;
 }
 
@@ -32,12 +32,24 @@ button {
 	margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+	.score-box {
+		width: 7rem;
+	}
+
+	input {
+		height: 7rem;
+		font-size: 4rem;
+	}
+}
+
+@media screen and (max-width: 475px) {
 	.score-box {
 		width: 5rem;
 	}
 
 	input {
 		height: 5rem;
+		font-size: 4rem;
 	}
 }

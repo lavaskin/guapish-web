@@ -1,0 +1,70 @@
+.movie {
+	position: relative;
+	cursor: pointer;
+	border-radius: 1rem;
+	transition: 0.25s;
+}
+
+.movie:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.thumb {
+	height: 20rem;
+}
+
+.rank {
+	position: absolute;
+	top: 0;
+	right: 0.75rem;
+	background-color: var(--accent-2);
+	border-radius: 0 0 0.5rem 0.5rem;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+}
+
+.dialog-body {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.ranks p {
+	font-size: 2.25rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.ranks div {
+	font-size: 1.25rem;
+	margin-bottom: 0.75rem;
+}
+
+.rank-content {
+	display: flex;
+	flex-direction: column;
+	justify-items: space-between;
+}
+
+.overall-rank {
+	font-size: 2.25rem;
+	font-weight: bold;
+	margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+	.thumb {
+		height: 10rem;
+	}
+	
+	.dialog-body img {
+		display: none;
+	}
+
+	.ranks p,
+	.overall-rank {
+		font-size: 1.5rem;
+	}
+}
