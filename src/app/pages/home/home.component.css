@@ -73,6 +73,10 @@
 }
 
 @media screen and (max-width: 650px) {
+	.logo {
+		width: 80%;
+	}
+	
 	.links {
 		gap: 2rem;
 	}
@@ -88,6 +92,15 @@
 	.member img {
 		width: 8rem;
 		height: 8rem;
+	}
+}
+@media screen and (max-width: 400px) {
+	.links {
+		gap: 1rem;
+	}
+
+	.link-icon {
+		height: 2.5rem;
 	}
 }
 
