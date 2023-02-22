@@ -17,9 +17,10 @@
 
 			<div class="rank-content">
 				<div class="ranks">
-					<p>Ranks:</p>
-					<div class="user-rank" *ngFor="let rank of movie.ranks">
-						{{ rank.name }}: {{ rank.rank }}
+					<p class="ranks-header">Ranks:</p>
+					<div class="ranking-wrapper" *ngFor="let userRank of movie.ranks">
+						<p class="user-rank">{{ userRank.name }}: {{ userRank.rank }}</p>
+						<p class="check" *ngIf="userRank.rank === rank"></p>
 					</div>
 				</div>
 

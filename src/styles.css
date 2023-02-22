@@ -25,3 +25,8 @@
 .btn:hover {
 	filter: brightness(0.9);
 }
+
+.check::before {
+	content: '✓';
+	color: forestgreen;
+}
