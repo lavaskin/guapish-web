@@ -364,30 +364,3 @@ const MoviesList: Movie[] = [
 ];
 
 export default MoviesList;
-
-
-////////////////
-// Example Movie
-// {
-// 	name: 'The Godfather',
-// 	year: '1972',
-// 	ranks: [
-// 		{
-// 			name: 'Jackson',
-// 			rank: 'S+'
-// 		},
-// 		{
-// 			name: 'Dillyn',
-// 			rank: 'F-'
-// 		},
-// 		{
-// 			name: 'Nikko',
-// 			rank: 'A+'
-// 		},
-// 		{
-// 			name: 'Tanner',
-// 			rank: 'B-'
-// 		},
-// 	],
-// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg'
-// },
