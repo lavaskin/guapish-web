@@ -10,7 +10,6 @@ export class RankerComponent implements OnInit {
 	public displayedRank: string = '';
 
 	private validScores = ['F-', 'F', 'F+', 'D-', 'D', 'D+', 'C-', 'C', 'C+', 'B-', 'B', 'B+', 'A-', 'A', 'A+', 'S-', 'S', 'S+'];
-	private scoreValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
 
 	public showDialog: boolean = false;
 
@@ -37,6 +36,6 @@ export class RankerComponent implements OnInit {
 	}
 
 	private getScoreValue(score: string): number {
-		return this.scoreValues[this.validScores.indexOf(score)];
+		return this.validScores.indexOf(score);
 	}
 }
