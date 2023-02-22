@@ -7,7 +7,8 @@ import MoviesList from 'src/app/data/movies';
 	styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-	public movies = MoviesList;
+	// To show
+	public movies = MoviesList.reverse();
 	
 	constructor() { }
 
