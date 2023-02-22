@@ -1,3 +1,9 @@
 <div class="page">
-	<p>The movies page is under construction!</p>
+
+	<div class="movies">
+		<app-movie *ngFor="let movie of movies" [movie]="movie"></app-movie>
+
+		<p *ngIf="movies.length === 0">No movies entered yet :(</p>
+	</div>
+
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UtilsService } from 'src/app/services/utils.service';
 
 @Component({
 	selector: 'app-ranker',
@@ -9,21 +10,17 @@ export class RankerComponent implements OnInit {
 	public scores: number[] = [-1, -1, -1, -1];
 	public displayedRank: string = '';
 
-	private validScores = ['F-', 'F', 'F+', 'D-', 'D', 'D+', 'C-', 'C', 'C+', 'B-', 'B', 'B+', 'A-', 'A', 'A+', 'S-', 'S', 'S+'];
-
 	public showDialog: boolean = false;
 
-	constructor() { }
+	constructor(private utilsService: UtilsService) { }
 
 	ngOnInit(): void { }
 
 	public updateScores(index: number, score: string): void {
 		if (!this.validateScore(score)) return;
+		
 		this.scores[index] = this.getScoreValue(score);
-
-		const validScores = this.scores.filter(score => score !== -1);
-		const average = Math.round(validScores.reduce((a, b) => a + b, 0) / validScores.length);
-		this.displayedRank = this.validScores[average];
+		this.displayedRank = this.utilsService.averageScores(this.scores);
 	}
 
 	public reset() {
@@ -32,10 +29,10 @@ export class RankerComponent implements OnInit {
 	}
 
 	private validateScore(score: string): boolean {
-		return this.validScores.indexOf(score) !== -1;
+		return this.utilsService.validScores.indexOf(score) !== -1;
 	}
 
 	private getScoreValue(score: string): number {
-		return this.validScores.indexOf(score);
+		return this.utilsService.validScores.indexOf(score);
 	}
 }

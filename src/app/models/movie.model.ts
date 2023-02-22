@@ -1,12 +1,12 @@
 export interface Movie {
 	name: string,
 	year: string,
-	rank: string,
-	scores: UserRank[],
+	ranks: UserRank[],
+	thumbnail: string,
 }
 
 export interface UserRank {
-	user: string,
+	name: string,
 	rank: string,
 }
 // ^-- e.g. jackson A+, dillyn F-, etc.

@@ -1,3 +1,9 @@
 .page {
 	padding: 0 3rem;
 }
+
+.movies {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
