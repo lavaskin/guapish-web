@@ -57,7 +57,7 @@ export class HomeComponent implements OnInit {
 		{
 			name: 'Dillyn',
 			picture: 'assets/pfps/dillyn.png',
-			link: 'https://youtu.be/DA7wDV4MbNo',
+			link: 'https://www.youtube.com/@dantesrevelations3124',
 			rank: '',
 		},
 	]
