@@ -7,14 +7,9 @@
 		<app-score-box (rankOutput)="updateScores(3, $event)"></app-score-box>
 	</div>
 
-	<div class="bottom">
-		<div class="rank" *ngIf="displayedRank !== ''">{{ displayedRank }}</div>
+	<div class="rank" *ngIf="displayedRank !== ''">{{ displayedRank }}</div>
 
-		<div class="buttons">
-			<!-- <button class="btn reset-btn" (click)="reset()">Reset</button> -->
-			<button class="btn help-btn" (click)="showDialog = true">Help</button>
-		</div>
-	</div>
+	<button class="btn help-btn" (click)="showDialog = true">?</button>
 
 	<app-dialog [(show)]="showDialog" [title]="'Help'">
 		<div class="help">

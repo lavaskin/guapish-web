@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
 		{
 			name: 'Jackson',
 			picture: 'assets/pfps/jackson.png',
-			link: 'https://twitter.com/lavaskin_trade',
+			link: 'https://slimes.lavask.in',
 			rank: '',
 		},
 		{

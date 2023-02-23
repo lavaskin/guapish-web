@@ -10,8 +10,6 @@
 }
 
 .dialog {
-	width: wrap-content;
-	height: wrap-content;
 	padding: 1rem;
 	border-radius: 0.5rem;
 	background-color: var(--background);

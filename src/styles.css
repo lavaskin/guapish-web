@@ -15,3 +15,18 @@
 .page {
 	margin-top: 3rem;
 }
+
+.btn {
+	font-size: 1.25rem;
+	border-radius: 0.5rem;
+	border: none;
+}
+
+.btn:hover {
+	filter: brightness(0.9);
+}
+
+.check::before {
+	content: '✓';
+	color: forestgreen;
+}

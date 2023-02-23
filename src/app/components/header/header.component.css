@@ -34,6 +34,7 @@ a:hover {
 .active-link {
 	border-top: 3px solid var(--text);
 	border-radius: 3px 3px 0 0;
+	transform: scale(1.05);
 }
 .active-link:hover {
 	border-top: 3px solid var(--accent-1);

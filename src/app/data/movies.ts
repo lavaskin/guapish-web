@@ -363,4 +363,4 @@ const MoviesList: Movie[] = [
 	// },
 ];
 
-export default MoviesList;
+export default MoviesList.reverse();
