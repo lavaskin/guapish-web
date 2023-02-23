@@ -1,10 +1,12 @@
 <div class="movie">
+	
 	<img class="thumb"
 		[src]="movie.thumbnail"
 		alt="{{movie.name}} Thumbnail"
 		(click)="showDialog = true">
 
 	<div class="rank" *ngIf="rank">{{ rank }}</div>
+
 </div>
 
 <app-dialog [title]="movie.name + ' (' + movie.year + ')'"
@@ -15,17 +17,16 @@
 			class="thumb"	
 			alt="{{movie.name}} Thumbnail">
 
-			<div class="rank-content">
-				<div class="ranks">
-					<p class="ranks-header">Ranks:</p>
-					<div class="ranking-wrapper" *ngFor="let userRank of movie.ranks">
-						<p class="user-rank">{{ userRank.name }}: {{ userRank.rank }}</p>
-						<p class="check" *ngIf="userRank.rank === rank"></p>
-					</div>
+		<div class="rank-content">
+			<div class="ranks">
+				<p class="ranks-header">Ranks:</p>
+				<div class="ranking-wrapper" *ngFor="let userRank of movie.ranks">
+					<p class="user-rank">{{ userRank.name }}: {{ userRank.rank }}</p>
+					<p class="check" *ngIf="userRank.rank === rank"></p>
 				</div>
-
-				<p class="overall-rank">Overall: {{ rank }}</p>
 			</div>
-	</div>
 
+			<p class="overall-rank">Overall: {{ rank }}</p>
+		</div>
+	</div>
 </app-dialog>
