@@ -8,7 +8,6 @@ import { Movie } from 'src/app/models/movie.model';
 	styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-	// To show
 	public movies: Movie[] = MoviesList;
 	
 	constructor() { }
