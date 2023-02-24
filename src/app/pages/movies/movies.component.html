@@ -5,7 +5,9 @@
 			<p>Sort Order</p>
 			<p class="btn-subtext">{{ sortOrderToString() }}</p>
 		</button>
-		<button class="btn tl-btn" (click)="tierListMode = !tierListMode">TL</button>
+		<button class="btn tl-btn" (click)="tierListMode = !tierListMode">
+			<img class="tl-btn-img" src="assets/icons/tierlist.png" alt="TL">
+		</button>
 		<button class="btn" (click)="showRanksFilterDialog = true">
 			<p>Ranks Filter</p>
 			<p class="btn-subtext">{{ rankFilterToString() }}</p>

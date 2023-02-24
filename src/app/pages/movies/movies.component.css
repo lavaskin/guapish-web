@@ -24,6 +24,13 @@
 
 .tl-btn {
 	background-color: var(--accent-2);
+	display: flex;
+	align-items: center;
+}
+
+.tl-btn-img {
+	width: 2rem;
+	height: 2rem;
 }
 
 .col {
@@ -60,6 +67,7 @@
 	display: flex;
 	flex-direction: row;
 	min-height: 5rem;
+	/* max-height: 8rem; */
 	gap: 0.5rem
 }
 

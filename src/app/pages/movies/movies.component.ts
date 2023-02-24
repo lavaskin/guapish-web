@@ -21,8 +21,8 @@ export class MoviesComponent implements OnInit {
 	public showSortOrderDialog: boolean = false;
 	public showRanksFilterDialog: boolean = false;
 
-	public tiers: string[] = this.utilsService.validScores.slice().reverse();
 	public tierListMode: boolean = false;
+	public tiers: string[] = this.utilsService.validScores.slice().reverse();
 	
 	constructor(private utilsService: UtilsService) { }
 
