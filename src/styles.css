@@ -31,3 +31,23 @@
 	content: '✓';
 	color: forestgreen;
 }
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label::before {
+	content: '';
+	display: inline-block;
+	width: 0.75rem;
+	height: 0.75rem;
+	background-color: var(--background);
+	border-radius: 50%;
+	border: 2px solid var(--text);
+	margin-right: 1rem;
+	transition: 0.25s ease-in-out;
+}
+
+input[type="radio"]:checked + label::before {
+	background-color: var(--accent-1);
+}

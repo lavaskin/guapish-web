@@ -67,4 +67,26 @@ export class MoviesComponent implements OnInit {
 				break;
 		}
 	}
+
+	public sortOrderToString(): string {
+		switch (this.sortOrder) {
+			case SortOrder.TimeDescending:
+				return 'Time Desc.';
+			case SortOrder.TimeAscending:
+				return 'Time Asc.';
+			case SortOrder.RankDescending:
+				return 'Rank Desc.';
+			case SortOrder.RankAscending:
+				return 'Rank Asc.';
+		}
+	}
+
+	public rankFilterToString(): string {
+		switch (this.rankFilter) {
+			case RankFilter.Overall:
+				return 'Overall';
+			default:
+				return this.rankFilter;
+		}
+	}
 }
