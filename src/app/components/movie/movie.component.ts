@@ -14,6 +14,7 @@ export class MovieComponent implements OnInit {
 	public overallRank!: string;
 
 	@Input() public rankFilter: RankFilter = RankFilter.Overall;
+	@Input() public showRank: boolean = true;
 
 	public showDialog = false;
 	

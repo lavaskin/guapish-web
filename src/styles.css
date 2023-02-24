@@ -4,6 +4,12 @@
 	--text: #f8f8ff;
 	--accent-1: #7f5899;
 	--accent-2: #322c58;
+	--s-tier: rgb(255, 127, 127);
+	--a-tier: rgb(255, 191, 127);
+	--b-tier: rgb(255, 255, 127);
+	--c-tier: rgb(191, 255, 127);
+	--d-tier: rgb(127, 255, 127);
+	--f-tier: rgb(127, 255, 191);
 
 	margin: 0;
 	padding: 0;

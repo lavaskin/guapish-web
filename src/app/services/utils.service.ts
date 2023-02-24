@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 	providedIn: 'root'
 })
 export class UtilsService {
-	public validScores = ['F-', 'F', 'F+', 'D-', 'D', 'D+', 'C-', 'C', 'C+', 'B-', 'B', 'B+', 'A-', 'A', 'A+', 'S-', 'S', 'S+'];
+	public validScores: string[] = ['F-', 'F', 'F+', 'D-', 'D', 'D+', 'C-', 'C', 'C+', 'B-', 'B', 'B+', 'A-', 'A', 'A+', 'S-', 'S', 'S+'];
 	
 	constructor() { }
 

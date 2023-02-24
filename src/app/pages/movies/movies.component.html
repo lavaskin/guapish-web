@@ -1,21 +1,37 @@
 <div class="page">
 
 	<div class="buttons">
-		<button class="btn" (click)="showSortOrderDialog = true">
+		<button class="btn" (click)="showSortOrderDialog = true" *ngIf="!tierListMode">
 			<p>Sort Order</p>
 			<p class="btn-subtext">{{ sortOrderToString() }}</p>
 		</button>
-		<button class="btn filter-btn" (click)="showRanksFilterDialog = true">
+		<button class="btn tl-btn" (click)="tierListMode = !tierListMode">
+			<img class="tl-btn-img" src="assets/icons/tierlist.png" alt="TL">
+		</button>
+		<button class="btn" (click)="showRanksFilterDialog = true">
 			<p>Ranks Filter</p>
 			<p class="btn-subtext">{{ rankFilterToString() }}</p>
 		</button>
 	</div>
 
-	<div class="movies-wrapper">
+	<div class="movies-wrapper" *ngIf="!tierListMode">
 		<div class="movies">
 			<app-movie *ngFor="let movie of movies"
 				[movie]="movie"
 				[rankFilter]="rankFilter"></app-movie>
+		</div>
+	</div>
+
+	<div class="tierlist-wrapper" *ngIf="tierListMode">
+		<div class="tier" *ngFor="let tier of tiers">
+			<p class="tier-header"
+				[style]="{'background-color': getTierColor(tier)}">{{ tier }}</p>
+			<div class="tier-movies">
+				<app-movie *ngFor="let movie of getMoviesInTier(tier)"
+					[movie]="movie"
+					[rankFilter]="rankFilter"
+					[showRank]="false"></app-movie>
+			</div>
 		</div>
 	</div>
 
