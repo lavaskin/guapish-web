@@ -20,6 +20,9 @@ export class MoviesComponent implements OnInit {
 
 	public showSortOrderDialog: boolean = false;
 	public showRanksFilterDialog: boolean = false;
+
+	public tiers: string[] = this.utilsService.validScores.slice().reverse();
+	public tierListMode: boolean = false;
 	
 	constructor(private utilsService: UtilsService) { }
 
@@ -87,6 +90,40 @@ export class MoviesComponent implements OnInit {
 				return 'Overall';
 			default:
 				return this.rankFilter;
+		}
+	}
+
+	public getMoviesInTier(tier: string): Movie[] {
+		const userMovies = this.rankFilter === RankFilter.Overall ?
+			this.movies :	
+			this.movies.filter(movie => movie.ranks.find(rank => rank.name === this.rankFilter));
+		return userMovies.filter(movie => {
+			const rank = this.rankFilter === RankFilter.Overall ?
+				this.utilsService.averageRanks(movie.ranks.map(rank => rank.rank)) :
+				movie.ranks.find(rank => rank.name === this.rankFilter)?.rank ?? '';
+			const score = this.utilsService.rankToScore(rank);
+			return score === this.utilsService.rankToScore(tier);
+		});
+	}
+
+	public getTierColor(tier: string): string {
+		const tierCategory = tier[0];
+
+		switch (tierCategory) {
+			case 'S':
+				return 'var(--s-tier)';
+			case 'A':
+				return 'var(--a-tier)';
+			case 'B':
+				return 'var(--b-tier)';
+			case 'C':
+				return 'var(--c-tier)';
+			case 'D':
+				return 'var(--d-tier)';
+			case 'F':
+				return 'var(--f-tier)';
+			default:
+				return 'var(--accent-1)';
 		}
 	}
 }

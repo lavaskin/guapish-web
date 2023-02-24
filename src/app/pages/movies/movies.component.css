@@ -22,7 +22,7 @@
 	font-style: italic;
 }
 
-.filter-btn {
+.tl-btn {
 	background-color: var(--accent-2);
 }
 
@@ -34,6 +34,7 @@
 	font-size: 1.25rem;
 }
 
+/* Movie Grid Styling */
 .movies-wrapper {
 	display: flex;
 	justify-content: center;
@@ -46,6 +47,42 @@
 	padding: 0 1rem;
 }
 
+/* TierList Styling */
+.tierlist-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding-left: 0.5rem;
+	margin-bottom: -0.5rem;
+}
+
+.tier {
+	display: flex;
+	flex-direction: row;
+	min-height: 5rem;
+	gap: 0.5rem
+}
+
+.tier-header {
+	width: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.tier-movies {
+	display: flex;
+	gap: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+	.tl-btn {
+		display: none;
+	}
+}
 @media screen and (max-width: 700px) {
 	.movies {
 		grid-template-columns: repeat(3, 1fr);
