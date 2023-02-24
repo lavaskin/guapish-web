@@ -3,7 +3,8 @@
 	<img class="thumb"
 		[src]="movie.thumbnail"
 		alt="{{movie.name}} Thumbnail"
-		(click)="showDialog = true">
+		(click)="showDialog = true"
+		tabindex="0">
 
 	<div class="rank" *ngIf="rank">{{ rank }}</div>
 

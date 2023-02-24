@@ -1,8 +1,14 @@
 <div class="page">
 
 	<div class="buttons">
-		<button class="btn" (click)="showSortOrderDialog = true">Sort Order</button>
-		<button class="btn filter-btn" (click)="showRanksFilterDialog = true">Ranks Filter</button>
+		<button class="btn" (click)="showSortOrderDialog = true">
+			<p>Sort Order</p>
+			<p class="btn-subtext">{{ sortOrderToString() }}</p>
+		</button>
+		<button class="btn filter-btn" (click)="showRanksFilterDialog = true">
+			<p>Ranks Filter</p>
+			<p class="btn-subtext">{{ rankFilterToString() }}</p>
+		</button>
 	</div>
 
 	<div class="movies-wrapper">
@@ -17,46 +23,35 @@
 
 <app-dialog [(show)]="showSortOrderDialog" [title]="'Sort Order'">
 	<div class="col">
-		<div class="row">
-			<input type="radio" id="sortOrder1" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.TimeDescending" (ngModelChange)="sort()">
-			<label for="sortOrder1">Time Descending</label>
-		</div>
-		<div class="row">
-			<input type="radio" id="sortOrder2" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.TimeAscending" (ngModelChange)="sort()">
-			<label for="sortOrder2">Time Ascending</label>
-		</div>
-		<div class="row">
-			<input type="radio" id="sortOrder3" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.RankDescending" (ngModelChange)="sort()">
-			<label for="sortOrder3">Rank Descending</label>
-		</div>
-		<div class="row">
-			<input type="radio" id="sortOrder4" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.RankAscending" (ngModelChange)="sort()">
-			<label for="sortOrder4">Rank Ascending</label>
-		</div>
+		<input type="radio" id="sortOrder1" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.TimeDescending" (ngModelChange)="sort()">
+		<label for="sortOrder1">Time Descending</label>
+		
+		<input type="radio" id="sortOrder2" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.TimeAscending" (ngModelChange)="sort()">
+		<label for="sortOrder2">Time Ascending</label>
+		
+		<input type="radio" id="sortOrder3" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.RankDescending" (ngModelChange)="sort()">
+		<label for="sortOrder3">Rank Descending</label>
+		
+		<input type="radio" id="sortOrder4" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.RankAscending" (ngModelChange)="sort()">
+		<label for="sortOrder4">Rank Ascending</label>
 	</div>
 </app-dialog>
 
 <app-dialog [(show)]="showRanksFilterDialog" [title]="'Ranks Filter'">
 	<div class="col">
-		<div class="row">
-			<input type="radio" id="filter1" name="rankFilter" [(ngModel)]="rankFilter" [value]="rankFilterEnum.Overall" (ngModelChange)="sort()">
-			<label for="filter1">Overall</label>
-		</div>
-		<div class="row">
-			<input type="radio" id="filter2" name="rankFilter" [(ngModel)]="rankFilter" [value]="rankFilterEnum.Jackson" (ngModelChange)="sort()">
-			<label for="filter2">Jackson</label>
-		</div>
-		<div class="row">
-			<input type="radio" id="filter3" name="rankFilter" [(ngModel)]="rankFilter" [value]="rankFilterEnum.Nikko" (ngModelChange)="sort()">
-			<label for="filter3">Nikko</label>
-		</div>
-		<div class="row">
-			<input type="radio" id="filter4" name="rankFilter" [(ngModel)]="rankFilter" [value]="rankFilterEnum.Tanner" (ngModelChange)="sort()">
-			<label for="filter4">Tanner</label>
-		</div>
-		<div class="row">
-			<input type="radio" id="filter5" name="rankFilter" [(ngModel)]="rankFilter" [value]="rankFilterEnum.Dillyn" (ngModelChange)="sort()">
-			<label for="filter5">Dillyn</label>
-		</div>
+		<input type="radio" id="filter1" name="rankFilter" [(ngModel)]="rankFilter" [value]="rankFilterEnum.Overall" (ngModelChange)="sort()">
+		<label for="filter1">Overall</label>
+		
+		<input type="radio" id="filter2" name="rankFilter" [(ngModel)]="rankFilter" [value]="rankFilterEnum.Jackson" (ngModelChange)="sort()">
+		<label for="filter2">Jackson</label>
+
+		<input type="radio" id="filter3" name="rankFilter" [(ngModel)]="rankFilter" [value]="rankFilterEnum.Nikko" (ngModelChange)="sort()">
+		<label for="filter3">Nikko</label>
+
+		<input type="radio" id="filter4" name="rankFilter" [(ngModel)]="rankFilter" [value]="rankFilterEnum.Tanner" (ngModelChange)="sort()">
+		<label for="filter4">Tanner</label>
+
+		<input type="radio" id="filter5" name="rankFilter" [(ngModel)]="rankFilter" [value]="rankFilterEnum.Dillyn" (ngModelChange)="sort()">
+		<label for="filter5">Dillyn</label>
 	</div>
 </app-dialog>
