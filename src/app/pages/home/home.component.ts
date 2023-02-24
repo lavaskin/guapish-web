@@ -57,7 +57,7 @@ export class HomeComponent implements OnInit {
 		{
 			name: 'Dillyn',
 			picture: 'assets/pfps/dillyn.png',
-			link: 'https://youtu.be/DA7wDV4MbNo',
+			link: 'https://www.youtube.com/@dantesrevelations3124',
 			rank: '',
 		},
 	]
@@ -78,8 +78,16 @@ export class HomeComponent implements OnInit {
 		});
 	}
 
-	openLink(url: string): void {
+	openLink(url: string, member?: Member): void {
 		if (url === '') return;
-		window.open(url, '_blank');
+
+		const mouseVideo = 'https://youtu.be/DA7wDV4MbNo';
+
+		// If the members name is dillyn, open the mouse video on a 1/20 chance, else open url
+		if (member?.name === 'Dillyn' && Math.floor(Math.random() * 20) === 0) {
+			window.open(mouseVideo, '_blank');
+		} else {
+			window.open(url, '_blank');
+		}
 	}
 }

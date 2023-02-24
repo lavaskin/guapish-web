@@ -22,4 +22,8 @@ export class UtilsService {
 		const average = Math.round(validScores.reduce((a, b) => a + b, 0) / validScores.length);
 		return this.validScores[average];
 	}
+
+	public rankToScore(rank: string): number {
+		return this.validScores.indexOf(rank);
+	}
 }
