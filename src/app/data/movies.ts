@@ -315,52 +315,54 @@ const MoviesList: Movie[] = [
 		],
 		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Straw_dogs_movie_poster.jpg/220px-Straw_dogs_movie_poster.jpg'
 	},
-	// {
-	// 	name: 'House of Wax',
-	// 	year: '2005',
-	// 	ranks: [
-	// 		{
-	// 			name: 'Jackson',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Dillyn',
-	// 			rank: 'F-'
-	// 		},
-	// 		{
-	// 			name: 'Nikko',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Tanner',
-	// 			rank: ''
-	// 		},
-	// 	],
-	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/House_Of_Wax_movie_poster.jpg/220px-House_Of_Wax_movie_poster.jpg'
-	// },
-	// {
-	// 	name: 'Bridge to Terabithia',
-	// 	year: '2007',
-	// 	ranks: [
-	// 		{
-	// 			name: 'Jackson',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Dillyn',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Nikko',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Tanner',
-	// 			rank: ''
-	// 		},
-	// 	],
-	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Bridgetoterabithiaposter.jpg/220px-Bridgetoterabithiaposter.jpg'
-	// },
+	{
+		// hhttps://youtu.be/3vtgJ1rLI-A
+		name: 'House of Wax',
+		year: '2005',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'B'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'F-'
+			},
+			{
+				name: 'Nikko',
+				rank: 'C-'
+			},
+			{
+				name: 'Tanner',
+				rank: 'A-'
+			},
+		],
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/House_Of_Wax_movie_poster.jpg/220px-House_Of_Wax_movie_poster.jpg'
+	},
+	{
+		// https://youtu.be/3vtgJ1rLI-A
+		name: 'Bridge to Terabithia',
+		year: '2007',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'C-'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'A+'
+			},
+			{
+				name: 'Nikko',
+				rank: 'C'
+			},
+			{
+				name: 'Tanner',
+				rank: 'B-'
+			},
+		],
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Bridgetoterabithiaposter.jpg/220px-Bridgetoterabithiaposter.jpg'
+	},
 ];
 
 export default MoviesList.reverse();
