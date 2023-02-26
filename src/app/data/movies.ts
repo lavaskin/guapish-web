@@ -4,6 +4,54 @@ import { Movie } from '../models/movie.model';
 // Oldest to newest
 const MoviesList: Movie[] = [
 	{
+		// https://youtu.be/mRfOv1d-4XA
+		name: 'Demon Slayer: Mugen Train',
+		year: '2020',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'S-'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'S'
+			},
+			{
+				name: 'Nikko',
+				rank: 'S-'
+			},
+			{
+				name: 'Tanner',
+				rank: 'A'
+			},
+		],
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Kimetsu_no_Yaiba_Mugen_Ressha_Hen_Poster.jpg/220px-Kimetsu_no_Yaiba_Mugen_Ressha_Hen_Poster.jpg'
+	},
+	{
+		// https://youtu.be/YL5AnxgeUo4
+		name: 'Doctor Strange in the Multiverse of Madness',
+		year: '2022',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'D'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'B+'
+			},
+			{
+				name: 'Nikko',
+				rank: 'C-'
+			},
+			{
+				name: 'Tanner',
+				rank: 'C-'
+			},
+		],
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg/220px-Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg'
+	},
+	{
 		// https://youtu.be/6SOHI-9MFzs
 		name: 'Godzilla: King of the Monsters',
 		year: '2019',
