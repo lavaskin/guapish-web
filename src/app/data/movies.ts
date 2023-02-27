@@ -4,6 +4,54 @@ import { Movie } from '../models/movie.model';
 // Oldest to newest
 const MoviesList: Movie[] = [
 	{
+		// https://youtu.be/mRfOv1d-4XA
+		name: 'Demon Slayer: Mugen Train',
+		year: '2020',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'S-'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'S'
+			},
+			{
+				name: 'Nikko',
+				rank: 'S-'
+			},
+			{
+				name: 'Tanner',
+				rank: 'A'
+			},
+		],
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Kimetsu_no_Yaiba_Mugen_Ressha_Hen_Poster.jpg/220px-Kimetsu_no_Yaiba_Mugen_Ressha_Hen_Poster.jpg'
+	},
+	{
+		// https://youtu.be/YL5AnxgeUo4
+		name: 'Doctor Strange in the Multiverse of Madness',
+		year: '2022',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'D'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'B+'
+			},
+			{
+				name: 'Nikko',
+				rank: 'C-'
+			},
+			{
+				name: 'Tanner',
+				rank: 'C-'
+			},
+		],
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg/220px-Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg'
+	},
+	{
 		// https://youtu.be/6SOHI-9MFzs
 		name: 'Godzilla: King of the Monsters',
 		year: '2019',
@@ -315,52 +363,102 @@ const MoviesList: Movie[] = [
 		],
 		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Straw_dogs_movie_poster.jpg/220px-Straw_dogs_movie_poster.jpg'
 	},
-	// {
-	// 	name: 'House of Wax',
-	// 	year: '2005',
-	// 	ranks: [
-	// 		{
-	// 			name: 'Jackson',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Dillyn',
-	// 			rank: 'F-'
-	// 		},
-	// 		{
-	// 			name: 'Nikko',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Tanner',
-	// 			rank: ''
-	// 		},
-	// 	],
-	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/House_Of_Wax_movie_poster.jpg/220px-House_Of_Wax_movie_poster.jpg'
-	// },
-	// {
-	// 	name: 'Bridge to Terabithia',
-	// 	year: '2007',
-	// 	ranks: [
-	// 		{
-	// 			name: 'Jackson',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Dillyn',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Nikko',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Tanner',
-	// 			rank: ''
-	// 		},
-	// 	],
-	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Bridgetoterabithiaposter.jpg/220px-Bridgetoterabithiaposter.jpg'
-	// },
+	{
+		// hhttps://youtu.be/3vtgJ1rLI-A
+		name: 'House of Wax',
+		year: '2005',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'B'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'F-'
+			},
+			{
+				name: 'Nikko',
+				rank: 'C-'
+			},
+			{
+				name: 'Tanner',
+				rank: 'A-'
+			},
+		],
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/House_Of_Wax_movie_poster.jpg/220px-House_Of_Wax_movie_poster.jpg'
+	},
+	{
+		// https://youtu.be/3vtgJ1rLI-A
+		name: 'Bridge to Terabithia',
+		year: '2007',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'C-'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'A+'
+			},
+			{
+				name: 'Nikko',
+				rank: 'C'
+			},
+			{
+				name: 'Tanner',
+				rank: 'B-'
+			},
+		],
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Bridgetoterabithiaposter.jpg/220px-Bridgetoterabithiaposter.jpg'
+	},
+	{
+		// TODO!
+		name: 'Ferris Bueller\'s Day Off',
+		year: '1986',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'A'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'A'
+			},
+			{
+				name: 'Nikko',
+				rank: 'B-'
+			},
+			{
+				name: 'Tanner',
+				rank: 'A+'
+			},
+		],
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Ferris_Bueller%27s_Day_Off.jpg/220px-Ferris_Bueller%27s_Day_Off.jpg'
+	},
+	{
+		// TODO!
+		name: 'Take Me Home Tonight',
+		year: '2011',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'C'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'B-'
+			},
+			{
+				name: 'Nikko',
+				rank: 'C+'
+			},
+			{
+				name: 'Tanner',
+				rank: 'D'
+			},
+		],
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Take_Me_Home_Tonight_Poster.jpg/220px-Take_Me_Home_Tonight_Poster.jpg'
+	},
 ];
 
 export default MoviesList.reverse();

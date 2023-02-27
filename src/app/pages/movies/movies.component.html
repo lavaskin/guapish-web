@@ -40,16 +40,16 @@
 <app-dialog [(show)]="showSortOrderDialog" [title]="'Sort Order'">
 	<div class="col">
 		<input type="radio" id="sortOrder1" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.TimeDescending" (ngModelChange)="sort()">
-		<label for="sortOrder1">Time Descending</label>
+		<label for="sortOrder1">Date Ranked ⮟</label>
 		
 		<input type="radio" id="sortOrder2" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.TimeAscending" (ngModelChange)="sort()">
-		<label for="sortOrder2">Time Ascending</label>
+		<label for="sortOrder2">Date Ranked ⮝</label>
 		
 		<input type="radio" id="sortOrder3" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.RankDescending" (ngModelChange)="sort()">
-		<label for="sortOrder3">Rank Descending</label>
+		<label for="sortOrder3">Rank ⮟</label>
 		
 		<input type="radio" id="sortOrder4" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.RankAscending" (ngModelChange)="sort()">
-		<label for="sortOrder4">Rank Ascending</label>
+		<label for="sortOrder4">Rank ⮝</label>
 	</div>
 </app-dialog>
 

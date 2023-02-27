@@ -19,10 +19,18 @@
 	position: absolute;
 	top: 0;
 	right: 0.75rem;
+
 	background-color: var(--accent-2);
-	border-radius: 0 0 0.5rem 0.5rem;
+	display: flex;
+	justify-content: center;
 	padding: 0.5rem;
 	font-size: 1.5rem;
+	min-width: 3rem;
+
+	border-right: 1px solid var(--accent-1);
+	border-left: 1px solid var(--accent-1);
+	border-bottom: 1px solid var(--accent-1);
+	border-radius: 0 0 0.75rem 0.75rem;
 }
 
 .dialog-body {
@@ -35,6 +43,7 @@
 .dialog-body .thumb {
 	width: auto;
 	height: 20rem;
+	border-radius: 0.5rem;
 }
 
 .ranks {
@@ -63,16 +72,18 @@
 	display: flex;
 	flex-direction: column;
 	justify-items: space-between;
+	gap: 2rem;
 }
 
 .overall-rank {
 	font-size: 2.25rem;
 	font-weight: bold;
 	margin-top: auto;
+	white-space: nowrap;
 }
 
-@media screen and (max-width: 768px) {
-	.dialog-body img {
+@media screen and (max-width: 630px) {
+	.dialog-body .thumb {
 		display: none;
 	}
 

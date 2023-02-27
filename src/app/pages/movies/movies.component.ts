@@ -74,13 +74,13 @@ export class MoviesComponent implements OnInit {
 	public sortOrderToString(): string {
 		switch (this.sortOrder) {
 			case SortOrder.TimeDescending:
-				return 'Time Desc.';
+				return 'Date ⮟';
 			case SortOrder.TimeAscending:
-				return 'Time Asc.';
+				return 'Date ⮝';
 			case SortOrder.RankDescending:
-				return 'Rank Desc.';
+				return 'Rank ⮟';
 			case SortOrder.RankAscending:
-				return 'Rank Asc.';
+				return 'Rank ⮝';
 		}
 	}
 

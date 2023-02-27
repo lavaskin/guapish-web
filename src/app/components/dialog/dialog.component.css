@@ -44,3 +44,9 @@
 .close-icon {
 	height: 1.25rem;
 }
+
+@media screen and (max-width: 768px) {
+	.title {
+		font-size: 1.25rem;
+	}
+}

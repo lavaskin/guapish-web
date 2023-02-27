@@ -18,6 +18,10 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+body {
+	background-color: var(--background);
+}
+
 .page {
 	margin-top: 3rem;
 }
@@ -56,4 +60,8 @@ input[type="radio"] + label::before {
 
 input[type="radio"]:checked + label::before {
 	background-color: var(--accent-1);
+}
+
+input[type="radio"]:hover + label::before {
+	background-color: var(--accent-2);
 }
