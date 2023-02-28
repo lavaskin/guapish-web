@@ -1,4 +1,7 @@
-<div class="background" *ngIf="show">
+<div (click)="close($event)"
+	class="background"
+	*ngIf="show"
+	#background>
 	
 	<div class="dialog">
 		<div class="top">
