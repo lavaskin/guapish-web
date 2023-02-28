@@ -16,10 +16,8 @@ input {
 }
 
 button {
-	border: none;
-	border-radius: 5px;
 	font-size: 1.5rem;
-	transition: 0.25s;
+	border-radius: 0.25rem;
 }
 
 .plus {
@@ -42,7 +40,6 @@ button {
 		font-size: 4rem;
 	}
 }
-
 @media screen and (max-width: 475px) {
 	.score-box {
 		width: 5rem;
@@ -50,6 +47,15 @@ button {
 
 	input {
 		height: 5rem;
-		font-size: 4rem;
+	}
+}
+@media screen and (max-width: 360px) {
+	.score-box {
+		width: 3.5rem;
+	}
+
+	input {
+		height: 3.5rem;
+		font-size: 2.75rem;
 	}
 }

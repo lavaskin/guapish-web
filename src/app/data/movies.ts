@@ -6,7 +6,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/mRfOv1d-4XA
 		name: 'Demon Slayer: Mugen Train',
-		year: '2020',
+		year: 2020,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -30,7 +30,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/YL5AnxgeUo4
 		name: 'Doctor Strange in the Multiverse of Madness',
-		year: '2022',
+		year: 2022,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -54,7 +54,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/6SOHI-9MFzs
 		name: 'Godzilla: King of the Monsters',
-		year: '2019',
+		year: 2019,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -78,7 +78,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/cb1ftvItQ-0
 		name: 'The Big Lebowski',
-		year: '1998',
+		year: 1998,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -102,7 +102,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/GDhdrltVhfs
 		name: 'Parasite',
-		year: '2019',
+		year: 2019,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -126,7 +126,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/yqXtbjJ0nhQ
 		name: 'Pan\'s Labyrinth',
-		year: '2006',
+		year: 2006,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -150,7 +150,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/Zdmt-Rxmz-c
 		name: 'The Cabin in the Woods',
-		year: '2012',
+		year: 2012,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -174,7 +174,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/NDG2ekBbEzg
 		name: 'Planet of the Apes',
-		year: '1968',
+		year: 1968,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -198,7 +198,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/ufmEw9sKZvM
 		name: 'Surf\'s Up',
-		year: '2007',
+		year: 2007,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -222,7 +222,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/1vLXBf-rm3w
 		name: 'Labryinth',
-		year: '1986',
+		year: 1986,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -246,7 +246,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/sd82szmjFtw
 		name: 'Avatar: The Way of Water',
-		year: '2022',
+		year: 2022,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -270,7 +270,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/sd82szmjFtw
 		name: 'The Village',
-		year: '2004',
+		year: 2004,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -294,7 +294,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/sd82szmjFtw
 		name: 'Pumping Iron',
-		year: '1977',
+		year: 1977,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -318,7 +318,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/SPJOSy_nQl0
 		name: 'The Prince of Egypt',
-		year: '1998',
+		year: 1998,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -342,7 +342,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/SPJOSy_nQl0
 		name: 'Straw Dogs',
-		year: '1971',
+		year: 1971,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -366,7 +366,7 @@ const MoviesList: Movie[] = [
 	{
 		// hhttps://youtu.be/3vtgJ1rLI-A
 		name: 'House of Wax',
-		year: '2005',
+		year: 2005,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -390,7 +390,7 @@ const MoviesList: Movie[] = [
 	{
 		// https://youtu.be/3vtgJ1rLI-A
 		name: 'Bridge to Terabithia',
-		year: '2007',
+		year: 2007,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -414,7 +414,7 @@ const MoviesList: Movie[] = [
 	{
 		// TODO!
 		name: 'Ferris Bueller\'s Day Off',
-		year: '1986',
+		year: 1986,
 		ranks: [
 			{
 				name: 'Jackson',
@@ -438,7 +438,7 @@ const MoviesList: Movie[] = [
 	{
 		// TODO!
 		name: 'Take Me Home Tonight',
-		year: '2011',
+		year: 2011,
 		ranks: [
 			{
 				name: 'Jackson',

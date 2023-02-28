@@ -1,6 +1,6 @@
 export interface Movie {
 	name: string,
-	year: string,
+	year: number,
 	ranks: UserRank[],
 	thumbnail: string,
 }

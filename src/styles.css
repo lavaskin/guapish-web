@@ -31,9 +31,10 @@ body {
 	border-radius: 0.5rem;
 	border: none;
 	cursor: pointer;
+	transition: 0.25s;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
 	filter: brightness(0.9);
 }
 
@@ -60,6 +61,7 @@ input[type="radio"] + label::before {
 
 input[type="radio"]:checked + label::before {
 	background-color: var(--accent-1);
+	box-shadow: 0 0 5px 2px var(--accent-1);
 }
 
 input[type="radio"]:hover + label::before {
