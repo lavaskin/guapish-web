@@ -34,7 +34,7 @@ body {
 	transition: 0.25s;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
 	filter: brightness(0.9);
 }
 

@@ -13,6 +13,7 @@
 	font-size: 5rem;
 	color: gold;
 }
+
 .help-btn {
 	position: fixed;
 	bottom: 2rem;
@@ -23,9 +24,21 @@
 	padding: 0 1.2rem;
 }
 
+.help-btn:hover, .help-btn:focus {
+	scale: 1.1;
+	box-shadow: 0 0 0.75rem 0.25rem var(--accent-2);
+}
+
 .help {
 	max-width: 50rem;
 	display: flex;
 	flex-direction: column;
 	gap: 0.3rem
+}
+
+@media screen and (max-width: 475px) {
+	.help-btn {
+		font-size: 2.25rem;
+		padding: 0 0.8rem;
+	}
 }
