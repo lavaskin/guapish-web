@@ -18,16 +18,16 @@ export class HomeComponent implements OnInit {
 			iconClasses: 'fab fa-patreon',
 		},
 		{
-			url: 'https://rumble.com/c/c-1693845',
-			iconClasses: 'fas fa-bullhorn',
-		},
-		{
 			url: 'https://twitter.com/FunnyBrosVids',
 			iconClasses: 'fab fa-twitter',
 		},
 		{
 			url: 'https://www.twitch.tv/funnybrosindustries',
 			iconClasses: 'fab fa-twitch',
+		},
+		{
+			url: 'https://rumble.com/c/c-1693845',
+			iconClasses: 'fas fa-bullhorn',
 		},
 	];
 	public members: Member[] = [
