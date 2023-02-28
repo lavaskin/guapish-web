@@ -25,14 +25,11 @@
 }
 
 .link {
-	background: none;
-	border: none;
-	transition: 0.25s;
 	font-size: 4rem;
+	transition: 0.25s;
 }
 
 .link:hover {
-	cursor: pointer;
 	transform: scale(1.15);
 	box-shadow: 0 0 0.75rem 1rem var(--accent-2);
 	background-color: var(--accent-2);

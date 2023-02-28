@@ -5,7 +5,7 @@
 
 		<div class="links">
 			<div *ngFor="let link of links">
-				<a class="link" [href]="link.url"><i [class]="link.iconClasses"></i></a>
+				<a [href]="link.url"><i [class]="'link ' + link.iconClasses"></i></a>
 			</div>
 		</div>
 	</div>
