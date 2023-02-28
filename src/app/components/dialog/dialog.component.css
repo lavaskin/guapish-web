@@ -41,8 +41,12 @@
 	border: none;
 }
 
-.close-icon {
-	height: 1.25rem;
+.close i {
+	transition: 0.25s;
+}
+
+.close i:hover {
+	color: var(--accent-1);
 }
 
 @media screen and (max-width: 768px) {

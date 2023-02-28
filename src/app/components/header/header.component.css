@@ -19,7 +19,7 @@
 	box-shadow: 0 0 10px var(--background);
 }
 
-a {
+i, a {
 	text-decoration: none;
 	font-size: 2rem;
 	text-transform: uppercase;
@@ -27,37 +27,16 @@ a {
 	padding-top: 5px;
 }
 
-a:hover {
+i:hover, a:hover {
 	color: var(--accent-1);
 }
 
 .active-link {
 	border-top: 3px solid var(--text);
 	border-radius: 3px 3px 0 0;
-	transform: scale(1.05);
+	transform: scale(1.1);
 }
 .active-link:hover {
 	border-top: 3px solid var(--accent-1);
 	border-radius: 0;
-}
-
-@media screen and (max-width: 525px) {
-	a {
-		font-size: 1.25rem;
-	}
-
-	.links {
-		gap: 2rem;
-		min-height: 4rem;
-	}
-}
-
-@media screen and (max-width: 350px) {
-	a {
-		font-size: 1rem;
-	}
-
-	.links {
-		gap: 1rem;
-	}
 }

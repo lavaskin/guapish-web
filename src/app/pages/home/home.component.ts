@@ -11,28 +11,23 @@ export class HomeComponent implements OnInit {
 	public links: Link[] = [
 		{
 			url: 'https://www.youtube.com/@GUAP34',
-			iconPath: 'assets/icons/youtube.svg',
-			iconAlt: 'YouTube Icon'
+			iconClasses: 'fab fa-youtube',
 		},
 		{
 			url: 'https://www.patreon.com/GUAPISH',
-			iconPath: 'assets/icons/patreon.svg',
-			iconAlt: 'Patreon Icon'
+			iconClasses: 'fab fa-patreon',
 		},
 		{
 			url: 'https://rumble.com/c/c-1693845',
-			iconPath: 'assets/icons/rumble.svg',
-			iconAlt: 'Rumble Icon'
+			iconClasses: 'fas fa-bullhorn',
 		},
 		{
 			url: 'https://twitter.com/FunnyBrosVids',
-			iconPath: 'assets/icons/twitter.svg',
-			iconAlt: 'Twitter Icon'
+			iconClasses: 'fab fa-twitter',
 		},
 		{
 			url: 'https://www.twitch.tv/funnybrosindustries',
-			iconPath: 'assets/icons/twitch.svg',
-			iconAlt: 'Twitch Icon'
+			iconClasses: 'fab fa-twitch',
 		},
 	];
 	public members: Member[] = [
@@ -81,10 +76,9 @@ export class HomeComponent implements OnInit {
 	openLink(url: string, member?: Member): void {
 		if (url === '') return;
 
-		const mouseVideo = 'https://youtu.be/DA7wDV4MbNo';
-
 		// If the members name is dillyn, open the mouse video on a 1/20 chance, else open url
 		if (member?.name === 'Dillyn' && Math.floor(Math.random() * 20) === 0) {
+			const mouseVideo = 'https://youtu.be/DA7wDV4MbNo';
 			window.open(mouseVideo, '_blank');
 		} else {
 			window.open(url, '_blank');

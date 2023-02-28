@@ -40,22 +40,22 @@
 <app-dialog [(show)]="showSortOrderDialog" [title]="'Sort Order'">
 	<div class="col">
 		<input type="radio" id="sortOrder1" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.TimeDescending" (ngModelChange)="sort()">
-		<label for="sortOrder1">Date Ranked ↓</label>
+		<label for="sortOrder1">Date Ranked <i class="fa-solid fa-caret-down"></i></label>
 		
 		<input type="radio" id="sortOrder2" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.TimeAscending" (ngModelChange)="sort()">
-		<label for="sortOrder2">Date Ranked ↑</label>
+		<label for="sortOrder2">Date Ranked <i class="fa-solid fa-caret-up"></i></label>
 		
 		<input type="radio" id="sortOrder3" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.RankDescending" (ngModelChange)="sort()">
-		<label for="sortOrder3">Rank ↓</label>
+		<label for="sortOrder3">Rank <i class="fa-solid fa-caret-down"></i></label>
 		
 		<input type="radio" id="sortOrder4" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.RankAscending" (ngModelChange)="sort()">
-		<label for="sortOrder4">Rank ↑</label>
+		<label for="sortOrder4">Rank <i class="fa-solid fa-caret-up"></i></label>
 
 		<input type="radio" id="sortOrder5" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.YearDescending" (ngModelChange)="sort()">
-		<label for="sortOrder5">Movie Year ↓</label>
+		<label for="sortOrder5">Movie Year <i class="fa-solid fa-caret-down"></i></label>
 		
 		<input type="radio" id="sortOrder6" name="sortOrder" [(ngModel)]="sortOrder" [value]="sortOrderEnum.YearAscending" (ngModelChange)="sort()">
-		<label for="sortOrder6">Movie Year ↑</label>
+		<label for="sortOrder6">Movie Year <i class="fa-solid fa-caret-up"></i></label>
 	</div>
 </app-dialog>
 

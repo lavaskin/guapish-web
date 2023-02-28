@@ -5,9 +5,7 @@
 
 		<div class="links">
 			<div *ngFor="let link of links">
-				<button class="link" (click)="openLink(link.url)">
-					<img class="link-icon" src="{{link.iconPath}}" alt="{{link.iconAlt}}">
-				</button>
+				<a class="link" [href]="link.url"><i [class]="link.iconClasses"></i></a>
 			</div>
 		</div>
 	</div>

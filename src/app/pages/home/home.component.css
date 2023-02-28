@@ -28,6 +28,7 @@
 	background: none;
 	border: none;
 	transition: 0.25s;
+	font-size: 4rem;
 }
 
 .link:hover {
@@ -36,10 +37,6 @@
 	box-shadow: 0 0 0.75rem 1rem var(--accent-2);
 	background-color: var(--accent-2);
 	border-radius: 50%;
-}
-
-.link-icon {
-	height: 4rem;
 }
 
 .about-header {
@@ -72,7 +69,13 @@
 	transform: scale(1.05);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
+	.link {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 680px) {
 	.logo {
 		width: 80%;
 	}
@@ -81,8 +84,8 @@
 		gap: 2rem;
 	}
 
-	.link-icon {
-		height: 2.7rem;
+	.link {
+		font-size: 2.5rem;
 	}
 
 	.member {
@@ -99,8 +102,8 @@
 		gap: 1rem;
 	}
 
-	.link-icon {
-		height: 2.5rem;
+	.link {
+		font-size: 2.2rem;
 	}
 }
 
