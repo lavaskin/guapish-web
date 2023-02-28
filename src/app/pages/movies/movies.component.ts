@@ -68,19 +68,29 @@ export class MoviesComponent implements OnInit {
 					return aScore - bScore;
 				});
 				break;
+			case SortOrder.YearDescending:
+				this.movies.sort((a, b) => b.year - a.year);
+				break;
+			case SortOrder.YearAscending:
+				this.movies.sort((a, b) => a.year - b.year);
+				break;
 		}
 	}
 
 	public sortOrderToString(): string {
 		switch (this.sortOrder) {
 			case SortOrder.TimeDescending:
-				return 'Date ⮟';
+				return 'Ranked ↓';
 			case SortOrder.TimeAscending:
-				return 'Date ⮝';
+				return 'Ranked ↑';
 			case SortOrder.RankDescending:
-				return 'Rank ⮟';
+				return 'Rank ↓';
 			case SortOrder.RankAscending:
-				return 'Rank ⮝';
+				return 'Rank ↑';
+			case SortOrder.YearDescending:
+				return 'Year ↓';
+			case SortOrder.YearAscending:
+				return 'Year ↑';
 		}
 	}
 
@@ -108,22 +118,6 @@ export class MoviesComponent implements OnInit {
 
 	public getTierColor(tier: string): string {
 		const tierCategory = tier[0];
-
-		switch (tierCategory) {
-			case 'S':
-				return 'var(--s-tier)';
-			case 'A':
-				return 'var(--a-tier)';
-			case 'B':
-				return 'var(--b-tier)';
-			case 'C':
-				return 'var(--c-tier)';
-			case 'D':
-				return 'var(--d-tier)';
-			case 'F':
-				return 'var(--f-tier)';
-			default:
-				return 'var(--accent-1)';
-		}
+		return `var(--${tierCategory.toLowerCase()}-tier)`;
 	}
 }

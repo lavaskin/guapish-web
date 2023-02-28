@@ -16,10 +16,8 @@ input {
 }
 
 button {
-	border: none;
-	border-radius: 5px;
 	font-size: 1.5rem;
-	transition: 0.25s;
+	border-radius: 0.25rem;
 }
 
 .plus {
