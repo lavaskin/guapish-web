@@ -13,7 +13,7 @@
 	display: flex;
 	gap: 3rem;
 	width: min-content;
-	min-height: 5rem;
+	min-height: 5.1rem;
 	padding: 1rem;
 	border-radius: 0 0 10px 10px;
 	box-shadow: 0 0 10px var(--background);
