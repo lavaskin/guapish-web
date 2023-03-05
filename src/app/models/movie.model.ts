@@ -1,8 +1,11 @@
+import { Link } from "./link.model";
+
 export interface Movie {
 	name: string,
 	year: number,
-	ranks: UserRank[],
 	thumbnail: string,
+	ranks: UserRank[],
+	links: Link[],
 }
 
 export interface UserRank {
