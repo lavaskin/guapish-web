@@ -24,7 +24,7 @@
 				<div *ngFor="let user of movie.ranks">
 					<div class="ranking-wrapper" *ngIf="user.rank">
 						<p class="user-rank">{{ user.name }}: {{ user.rank }}</p>
-						<p class="check" *ngIf="user.rank === overallRank"></p>
+						<i class="fas fa-check" *ngIf="user.rank === overallRank"></i>
 					</div>
 				</div>
 			</div>

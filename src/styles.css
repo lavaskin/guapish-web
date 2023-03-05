@@ -38,8 +38,7 @@ body {
 	filter: brightness(0.9);
 }
 
-.check::before {
-	content: '✓';
+.fa-check {
 	color: forestgreen;
 }
 
