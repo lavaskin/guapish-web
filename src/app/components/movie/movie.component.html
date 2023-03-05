@@ -13,7 +13,7 @@
 <app-dialog [title]="movie.name + ' (' + movie.year + ')'"
 	[(show)]="showDialog">
 
-	<div class="dialog-body">
+	<div class="top">
 		<img [src]="movie.thumbnail"
 			class="thumb"	
 			alt="{{movie.name}} Thumbnail">
@@ -30,6 +30,16 @@
 			</div>
 
 			<p class="overall-rank">Overall: {{ overallRank }}</p>
+		</div>
+	</div>
+
+	<div class="line" *ngIf="movie.links.length > 0"></div>
+
+	<div class="bottom">
+		<div *ngFor="let link of movie.links">
+			<a [href]="link.url"
+				tabindex="0"
+				target="_blank"><i [class]="'link ' + link.iconClasses"></i></a>
 		</div>
 	</div>
 </app-dialog>
