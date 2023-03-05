@@ -30,6 +30,14 @@ const MoviesList: Movie[] = [
 				url: 'https://youtu.be/mRfOv1d-4XA',
 				iconClasses: 'fab fa-youtube',
 			},
+			{
+				url: 'https://www.imdb.com/title/tt11032374',
+				iconClasses: 'fab fa-imdb',
+			},
+			{
+				url: 'https://www.rottentomatoes.com/m/demon_slayer_kimetsu_no_yaiba_the_movie_mugen_train',
+				iconClasses: 'fas fa-tomato',
+			}
 		],
 	},
 	{
@@ -59,6 +67,14 @@ const MoviesList: Movie[] = [
 				url: 'https://youtu.be/r9iD7Rr6g4s',
 				iconClasses: 'fab fa-youtube',
 			},
+			{
+				url: 'https://www.imdb.com/title/tt10872600',
+				iconClasses: 'fab fa-imdb',
+			},
+			{
+				url: 'https://www.rottentomatoes.com/m/spider_man_no_way_home',
+				iconClasses: 'fas fa-tomato',
+			}
 		],
 	},
 	{
@@ -112,7 +128,20 @@ const MoviesList: Movie[] = [
 				rank: 'A'
 			},
 		],
-		links: [],
+		links: [
+			{
+				url: 'https://youtu.be/Oi9KB9Isuhk',
+				iconClasses: 'fab fa-youtube',
+			},
+			{
+				url: 'https://www.imdb.com/title/tt14331144',
+				iconClasses: 'fab fa-imdb',
+			},
+			{
+				url: 'https://www.rottentomatoes.com/m/jujutsu_kaisen_0_the_movie',
+				iconClasses: 'fas fa-tomato',
+			}
+		],
 	},
 	{
 		name: 'Godzilla: King of the Monsters',
@@ -198,6 +227,14 @@ const MoviesList: Movie[] = [
 			{
 				url: 'https://youtu.be/GDhdrltVhfs',
 				iconClasses: 'fab fa-youtube',
+			},
+			{
+				url: 'https://www.imdb.com/title/tt6751668',
+				iconClasses: 'fab fa-imdb',
+			},
+			{
+				url: 'https://www.rottentomatoes.com/m/parasite_2019',
+				iconClasses: 'fas fa-tomato',
 			},
 		],
 	},
@@ -347,7 +384,6 @@ const MoviesList: Movie[] = [
 		],
 	},
 	{
-		// https://youtu.be/sd82szmjFtw
 		name: 'Avatar: The Way of Water',
 		year: 2022,
 		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Avatar_The_Way_of_Water_poster.jpg/220px-Avatar_The_Way_of_Water_poster.jpg',
@@ -371,7 +407,7 @@ const MoviesList: Movie[] = [
 		],
 		links: [
 			{
-				url: 'https://youtu.be/1vLXBf-rm3w',
+				url: 'https://youtu.be/sd82szmjFtw',
 				iconClasses: 'fab fa-youtube',
 			},
 		],
@@ -460,6 +496,14 @@ const MoviesList: Movie[] = [
 			{
 				url: 'https://youtu.be/SPJOSy_nQl0',
 				iconClasses: 'fab fa-youtube',
+			},
+			{
+				url: 'https://www.imdb.com/title/tt0120794',
+				iconClasses: 'fab fa-imdb',
+			},
+			{
+				url: 'https://www.rottentomatoes.com/m/prince_of_egypt',
+				iconClasses: 'fas fa-tomato',
 			},
 		],
 	},
@@ -577,6 +621,10 @@ const MoviesList: Movie[] = [
 				url: 'https://youtu.be/biu8sZHsqUU',
 				iconClasses: 'fab fa-youtube',
 			},
+			{
+				url: 'https://www.imdb.com/title/tt0091042',
+				iconClasses: 'fab fa-imdb',
+			},
 		],
 	},
 	{
@@ -606,8 +654,86 @@ const MoviesList: Movie[] = [
 				url :'https://youtu.be/biu8sZHsqUU',
 				iconClasses: 'fab fa-youtube',
 			},
+			{
+				url: 'https://www.imdb.com/title/tt0810922',
+				iconClasses: 'fab fa-imdb',
+			},
 		],
 	},
+	// {
+	// 	name: 'Avatar',
+	// 	year: 2009,
+	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Avatar_%282009_film%29_poster.jpg/220px-Avatar_%282009_film%29_poster.jpg',
+	// 	ranks: [
+	// 		{
+	// 			name: 'Jackson',
+	// 			rank: ''
+	// 		},
+	// 		{
+	// 			name: 'Dillyn',
+	// 			rank: ''
+	// 		},
+	// 		{
+	// 			name: 'Nikko',
+	// 			rank: ''
+	// 		},
+	// 		{
+	// 			name: 'Tanner',
+	// 			rank: ''
+	// 		},
+	// 	],
+	// 	links: [
+	// 		// {
+	// 		// 	url :'',
+	// 		// 	iconClasses: 'fab fa-youtube',
+	// 		// },
+	// 		{
+	// 			url: 'https://www.imdb.com/title/tt0499549',
+	// 			iconClasses: 'fab fa-imdb',
+	// 		},
+	// 		{
+	// 			url: 'https://www.rottentomatoes.com/m/avatar',
+	// 			iconClasses: 'fas fa-tomato',
+	// 		}
+	// 	],
+	// },
+	// {
+	// 	name: 'Waxwork',
+	// 	year: 1988,
+	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Waxworkposter.jpg/220px-Waxworkposter.jpg',
+	// 	ranks: [
+	// 		{
+	// 			name: 'Jackson',
+	// 			rank: ''
+	// 		},
+	// 		{
+	// 			name: 'Dillyn',
+	// 			rank: ''
+	// 		},
+	// 		{
+	// 			name: 'Nikko',
+	// 			rank: ''
+	// 		},
+	// 		{
+	// 			name: 'Tanner',
+	// 			rank: ''
+	// 		},
+	// 	],
+	// 	links: [
+	// 		// {
+	// 		// 	url :'',
+	// 		// 	iconClasses: 'fab fa-youtube',
+	// 		// },
+	// 		{
+	// 			url: 'https://www.imdb.com/title/tt0096426',
+	// 			iconClasses: 'fab fa-imdb',
+	// 		},
+	// 		{
+	// 			url: 'https://www.rottentomatoes.com/m/waxwork',
+	// 			iconClasses: 'fas fa-tomato',
+	// 		}
+	// 	],
+	// },
 ];
 
 export default MoviesList.reverse();
