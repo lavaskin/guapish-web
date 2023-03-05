@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
 		},
 		{
 			url: 'https://rumble.com/c/c-1693845',
-			iconClasses: 'fas fa-bullhorn',
+			iconClasses: 'fak fa-rumble',
 		},
 	];
 	public members: Member[] = [
