@@ -21,6 +21,11 @@
 	font-size: 0.8rem;
 }
 
+.big-btn {
+	width: 9rem;
+	white-space: nowrap;
+}
+
 .tl-btn {
 	background-color: var(--accent-2);
 	display: flex;
@@ -99,5 +104,10 @@
 @media screen and (max-width: 500px) {
 	.movies {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.big-btn {
+		font-size: 0.9rem;
+		width: 7rem;
 	}
 }
