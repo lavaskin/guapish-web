@@ -14,6 +14,7 @@
 		</button>
 	</div>
 
+	<!-- Movies Grid View -->
 	<div class="movies-wrapper" *ngIf="!tierListMode">
 		<div class="movies">
 			<app-movie *ngFor="let movie of movies"
@@ -22,6 +23,7 @@
 		</div>
 	</div>
 
+	<!-- Tier List View -->
 	<div class="tierlist-wrapper" *ngIf="tierListMode">
 		<div class="tier" *ngFor="let tier of tiers">
 			<p class="tier-header"
