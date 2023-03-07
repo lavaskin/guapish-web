@@ -22,7 +22,7 @@
 }
 
 .big-btn {
-	width: 9rem;
+	width: 9.5rem;
 	white-space: nowrap;
 }
 
@@ -114,5 +114,9 @@
 	.big-btn {
 		font-size: 0.9rem;
 		width: 7rem;
+	}
+
+	.btn-subtext {
+		font-size: 0.7rem;
 	}
 }
