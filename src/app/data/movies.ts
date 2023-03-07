@@ -660,80 +660,80 @@ const MoviesList: Movie[] = [
 			},
 		],
 	},
-	// {
-	// 	name: 'Avatar',
-	// 	year: 2009,
-	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Avatar_%282009_film%29_poster.jpg/220px-Avatar_%282009_film%29_poster.jpg',
-	// 	ranks: [
-	// 		{
-	// 			name: 'Jackson',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Dillyn',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Nikko',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Tanner',
-	// 			rank: ''
-	// 		},
-	// 	],
-	// 	links: [
-	// 		// {
-	// 		// 	url :'',
-	// 		// 	iconClasses: 'fab fa-youtube',
-	// 		// },
-	// 		{
-	// 			url: 'https://www.imdb.com/title/tt0499549',
-	// 			iconClasses: 'fab fa-imdb',
-	// 		},
-	// 		{
-	// 			url: 'https://www.rottentomatoes.com/m/avatar',
-	// 			iconClasses: 'fas fa-tomato',
-	// 		}
-	// 	],
-	// },
-	// {
-	// 	name: 'Waxwork',
-	// 	year: 1988,
-	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Waxworkposter.jpg/220px-Waxworkposter.jpg',
-	// 	ranks: [
-	// 		{
-	// 			name: 'Jackson',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Dillyn',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Nikko',
-	// 			rank: ''
-	// 		},
-	// 		{
-	// 			name: 'Tanner',
-	// 			rank: ''
-	// 		},
-	// 	],
-	// 	links: [
-	// 		// {
-	// 		// 	url :'',
-	// 		// 	iconClasses: 'fab fa-youtube',
-	// 		// },
-	// 		{
-	// 			url: 'https://www.imdb.com/title/tt0096426',
-	// 			iconClasses: 'fab fa-imdb',
-	// 		},
-	// 		{
-	// 			url: 'https://www.rottentomatoes.com/m/waxwork',
-	// 			iconClasses: 'fas fa-tomato',
-	// 		}
-	// 	],
-	// },
+	{
+		name: 'Avatar',
+		year: 2009,
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Avatar_%282009_film%29_poster.jpg/220px-Avatar_%282009_film%29_poster.jpg',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'B-'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'S'
+			},
+			{
+				name: 'Nikko',
+				rank: 'B-'
+			},
+			{
+				name: 'Tanner',
+				rank: 'B'
+			},
+		],
+		links: [
+			// {
+			// 	url :'',
+			// 	iconClasses: 'fab fa-youtube',
+			// },
+			{
+				url: 'https://www.imdb.com/title/tt0499549',
+				iconClasses: 'fab fa-imdb',
+			},
+			{
+				url: 'https://www.rottentomatoes.com/m/avatar',
+				iconClasses: 'fas fa-tomato',
+			}
+		],
+	},
+	{
+		name: 'Waxwork',
+		year: 1988,
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Waxworkposter.jpg/220px-Waxworkposter.jpg',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'A+'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'C-'
+			},
+			{
+				name: 'Nikko',
+				rank: 'A'
+			},
+			{
+				name: 'Tanner',
+				rank: 'A-'
+			},
+		],
+		links: [
+			// {
+			// 	url :'',
+			// 	iconClasses: 'fab fa-youtube',
+			// },
+			{
+				url: 'https://www.imdb.com/title/tt0096426',
+				iconClasses: 'fab fa-imdb',
+			},
+			{
+				url: 'https://www.rottentomatoes.com/m/waxwork',
+				iconClasses: 'fas fa-tomato',
+			}
+		],
+	},
 ];
 
 export default MoviesList.reverse();
