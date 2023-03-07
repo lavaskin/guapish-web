@@ -21,6 +21,11 @@
 	font-size: 0.8rem;
 }
 
+.big-btn {
+	width: 9rem;
+	white-space: nowrap;
+}
+
 .tl-btn {
 	background-color: var(--accent-2);
 	display: flex;
@@ -49,7 +54,7 @@
 
 .movies {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	gap: 1rem;
 	padding: 0 1rem;
 }
@@ -67,7 +72,7 @@
 	display: flex;
 	flex-direction: row;
 	min-height: 5rem;
-	gap: 0.5rem
+	gap: 0.5rem;
 }
 
 .tier-header {
@@ -91,6 +96,11 @@
 		display: none;
 	}
 }
+@media screen and (max-width: 900px) {
+	.movies {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
 @media screen and (max-width: 700px) {
 	.movies {
 		grid-template-columns: repeat(3, 1fr);
@@ -99,5 +109,10 @@
 @media screen and (max-width: 500px) {
 	.movies {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.big-btn {
+		font-size: 0.9rem;
+		width: 7rem;
 	}
 }

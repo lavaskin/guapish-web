@@ -1,19 +1,20 @@
 <div class="page">
 
 	<div class="buttons">
-		<button class="btn" (click)="showSortOrderDialog = true" *ngIf="!tierListMode">
+		<button class="btn big-btn" (click)="showSortOrderDialog = true" *ngIf="!tierListMode">
 			<p>Sort Order</p>
 			<p class="btn-subtext">{{ sortOrderToString() }}</p>
 		</button>
 		<button class="btn tl-btn" (click)="tierListMode = !tierListMode">
 			<img class="tl-btn-img" src="assets/icons/tierlist.png" alt="TL">
 		</button>
-		<button class="btn" (click)="showRanksFilterDialog = true">
+		<button class="btn big-btn" (click)="showRanksFilterDialog = true">
 			<p>Ranks Filter</p>
 			<p class="btn-subtext">{{ rankFilterToString() }}</p>
 		</button>
 	</div>
 
+	<!-- Movies Grid View -->
 	<div class="movies-wrapper" *ngIf="!tierListMode">
 		<div class="movies">
 			<app-movie *ngFor="let movie of movies"
@@ -22,6 +23,7 @@
 		</div>
 	</div>
 
+	<!-- Tier List View -->
 	<div class="tierlist-wrapper" *ngIf="tierListMode">
 		<div class="tier" *ngFor="let tier of tiers">
 			<p class="tier-header"

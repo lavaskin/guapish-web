@@ -660,10 +660,84 @@ const MoviesList: Movie[] = [
 			},
 		],
 	},
+	{
+		name: 'Avatar',
+		year: 2009,
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Avatar_%282009_film%29_poster.jpg/220px-Avatar_%282009_film%29_poster.jpg',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'B-'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'S'
+			},
+			{
+				name: 'Nikko',
+				rank: 'B-'
+			},
+			{
+				name: 'Tanner',
+				rank: 'B'
+			},
+		],
+		links: [
+			// {
+			// 	url :'',
+			// 	iconClasses: 'fab fa-youtube',
+			// },
+			{
+				url: 'https://www.imdb.com/title/tt0499549',
+				iconClasses: 'fab fa-imdb',
+			},
+			{
+				url: 'https://www.rottentomatoes.com/m/avatar',
+				iconClasses: 'fas fa-tomato',
+			}
+		],
+	},
+	{
+		name: 'Waxwork',
+		year: 1988,
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Waxworkposter.jpg/220px-Waxworkposter.jpg',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'A+'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'C-'
+			},
+			{
+				name: 'Nikko',
+				rank: 'A'
+			},
+			{
+				name: 'Tanner',
+				rank: 'A-'
+			},
+		],
+		links: [
+			// {
+			// 	url :'',
+			// 	iconClasses: 'fab fa-youtube',
+			// },
+			{
+				url: 'https://www.imdb.com/title/tt0096426',
+				iconClasses: 'fab fa-imdb',
+			},
+			{
+				url: 'https://www.rottentomatoes.com/m/waxwork',
+				iconClasses: 'fas fa-tomato',
+			}
+		],
+	},
 	// {
-	// 	name: 'Avatar',
-	// 	year: 2009,
-	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Avatar_%282009_film%29_poster.jpg/220px-Avatar_%282009_film%29_poster.jpg',
+	// 	name: 'Joker',
+	// 	year: 2019,
+	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Joker_%282019_film%29_poster.jpg/220px-Joker_%282019_film%29_poster.jpg',
 	// 	ranks: [
 	// 		{
 	// 			name: 'Jackson',
@@ -688,19 +762,19 @@ const MoviesList: Movie[] = [
 	// 		// 	iconClasses: 'fab fa-youtube',
 	// 		// },
 	// 		{
-	// 			url: 'https://www.imdb.com/title/tt0499549',
+	// 			url: 'https://www.imdb.com/title/tt7286456',
 	// 			iconClasses: 'fab fa-imdb',
 	// 		},
 	// 		{
-	// 			url: 'https://www.rottentomatoes.com/m/avatar',
+	// 			url: 'https://www.rottentomatoes.com/m/joker_2019',
 	// 			iconClasses: 'fas fa-tomato',
 	// 		}
 	// 	],
 	// },
 	// {
-	// 	name: 'Waxwork',
-	// 	year: 1988,
-	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Waxworkposter.jpg/220px-Waxworkposter.jpg',
+	// 	name: 'Invasion of the Body Snatchers',
+	// 	year: 1956,
+	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Invasion_of_the_Body_Snatchers_%281956_poster%29.jpg/220px-Invasion_of_the_Body_Snatchers_%281956_poster%29.jpg',
 	// 	ranks: [
 	// 		{
 	// 			name: 'Jackson',
@@ -725,11 +799,11 @@ const MoviesList: Movie[] = [
 	// 		// 	iconClasses: 'fab fa-youtube',
 	// 		// },
 	// 		{
-	// 			url: 'https://www.imdb.com/title/tt0096426',
+	// 			url: 'https://www.imdb.com/title/tt0049366',
 	// 			iconClasses: 'fab fa-imdb',
 	// 		},
 	// 		{
-	// 			url: 'https://www.rottentomatoes.com/m/waxwork',
+	// 			url: 'https://www.rottentomatoes.com/m/1010678-invasion_of_the_body_snatchers',
 	// 			iconClasses: 'fas fa-tomato',
 	// 		}
 	// 	],
