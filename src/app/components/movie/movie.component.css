@@ -6,11 +6,6 @@
 	max-width: 12rem;
 }
 
-.movie:hover {
-	transform: scale(1.05);
-	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-}
-
 .thumb {
 	width: 100%;
 	aspect-ratio: 2 / 3;
@@ -102,6 +97,12 @@
 	color: var(--accent-1);
 }
 
+@media screen and (min-width: 768px) {
+	.movie:hover {
+		transform: scale(1.05);
+	}
+}
+
 @media screen and (max-width: 630px) {
 	.ranks p,
 	.overall-rank {
@@ -112,6 +113,15 @@
 @media screen and (max-width: 630px) {
 	.top .thumb {
 		display: none;
+	}
+
+	.bottom {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.bottom i {
+		font-size: 2rem;
 	}
 
 	.ranks p,

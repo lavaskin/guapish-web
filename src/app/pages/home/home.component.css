@@ -29,13 +29,6 @@
 	transition: 0.25s;
 }
 
-.link:hover {
-	transform: scale(1.15);
-	box-shadow: 0 0 0.75rem 1rem var(--accent-2);
-	background-color: var(--accent-2);
-	border-radius: 50%;
-}
-
 .about-header {
 	font-size: 3rem;
 	text-align: center;
@@ -62,8 +55,18 @@
 	cursor: pointer;
 	transition: 0.25s;
 }
-.member img:hover {
-	transform: scale(1.05);
+
+@media screen and (min-width: 768px) {
+	.link:hover {
+		transform: scale(1.15);
+		box-shadow: 0 0 0.75rem 1rem var(--accent-2);
+		background-color: var(--accent-2);
+		border-radius: 50%;
+	}
+
+	.member img:hover {
+		transform: scale(1.05);
+	}
 }
 
 @media screen and (max-width: 1000px) {
