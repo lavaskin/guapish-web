@@ -651,7 +651,7 @@ const MoviesList: Movie[] = [
 		],
 		links: [
 			{
-				url :'https://youtu.be/biu8sZHsqUU',
+				url: 'https://youtu.be/biu8sZHsqUU',
 				iconClasses: 'fab fa-youtube',
 			},
 			{
@@ -683,10 +683,10 @@ const MoviesList: Movie[] = [
 			},
 		],
 		links: [
-			// {
-			// 	url :'',
-			// 	iconClasses: 'fab fa-youtube',
-			// },
+			{
+				url: 'https://youtu.be/tfc-HevYUe4',
+				iconClasses: 'fab fa-youtube',
+			},
 			{
 				url: 'https://www.imdb.com/title/tt0499549',
 				iconClasses: 'fab fa-imdb',
@@ -720,10 +720,10 @@ const MoviesList: Movie[] = [
 			},
 		],
 		links: [
-			// {
-			// 	url :'',
-			// 	iconClasses: 'fab fa-youtube',
-			// },
+			{
+				url: 'https://youtu.be/tfc-HevYUe4',
+				iconClasses: 'fab fa-youtube',
+			},
 			{
 				url: 'https://www.imdb.com/title/tt0096426',
 				iconClasses: 'fab fa-imdb',
@@ -734,10 +734,84 @@ const MoviesList: Movie[] = [
 			}
 		],
 	},
+	{
+		name: 'Joker',
+		year: 2019,
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Joker_%282019_film%29_poster.jpg/220px-Joker_%282019_film%29_poster.jpg',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'S+'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'B-'
+			},
+			{
+				name: 'Nikko',
+				rank: 'S'
+			},
+			{
+				name: 'Tanner',
+				rank: 'S+'
+			},
+		],
+		links: [
+			// {
+			// 	url: '',
+			// 	iconClasses: 'fab fa-youtube',
+			// },
+			{
+				url: 'https://www.imdb.com/title/tt7286456',
+				iconClasses: 'fab fa-imdb',
+			},
+			{
+				url: 'https://www.rottentomatoes.com/m/joker_2019',
+				iconClasses: 'fas fa-tomato',
+			}
+		],
+	},
+	{
+		name: 'Invasion of the Body Snatchers',
+		year: 1956,
+		thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Invasion_of_the_Body_Snatchers_%281956_poster%29.jpg/220px-Invasion_of_the_Body_Snatchers_%281956_poster%29.jpg',
+		ranks: [
+			{
+				name: 'Jackson',
+				rank: 'C'
+			},
+			{
+				name: 'Dillyn',
+				rank: 'A'
+			},
+			{
+				name: 'Nikko',
+				rank: 'D+'
+			},
+			{
+				name: 'Tanner',
+				rank: 'A+'
+			},
+		],
+		links: [
+			// {
+			// 	url: '',
+			// 	iconClasses: 'fab fa-youtube',
+			// },
+			{
+				url: 'https://www.imdb.com/title/tt0049366',
+				iconClasses: 'fab fa-imdb',
+			},
+			{
+				url: 'https://www.rottentomatoes.com/m/1010678-invasion_of_the_body_snatchers',
+				iconClasses: 'fas fa-tomato',
+			}
+		],
+	},
 	// {
-	// 	name: 'Joker',
-	// 	year: 2019,
-	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Joker_%282019_film%29_poster.jpg/220px-Joker_%282019_film%29_poster.jpg',
+	// 	name: 'Cube',
+	// 	year: 1997,
+	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Cube_The_Movie_Poster_Art.jpg/220px-Cube_The_Movie_Poster_Art.jpg',
 	// 	ranks: [
 	// 		{
 	// 			name: 'Jackson',
@@ -758,23 +832,23 @@ const MoviesList: Movie[] = [
 	// 	],
 	// 	links: [
 	// 		// {
-	// 		// 	url :'',
+	// 		// 	url: '',
 	// 		// 	iconClasses: 'fab fa-youtube',
 	// 		// },
 	// 		{
-	// 			url: 'https://www.imdb.com/title/tt7286456',
+	// 			url: 'https://www.imdb.com/title/tt0123755',
 	// 			iconClasses: 'fab fa-imdb',
 	// 		},
 	// 		{
-	// 			url: 'https://www.rottentomatoes.com/m/joker_2019',
+	// 			url: 'https://www.rottentomatoes.com/m/cube',
 	// 			iconClasses: 'fas fa-tomato',
 	// 		}
 	// 	],
 	// },
 	// {
-	// 	name: 'Invasion of the Body Snatchers',
-	// 	year: 1956,
-	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Invasion_of_the_Body_Snatchers_%281956_poster%29.jpg/220px-Invasion_of_the_Body_Snatchers_%281956_poster%29.jpg',
+	// 	name: 'Cloverfield',
+	// 	year: 2008,
+	// 	thumbnail: 'https://upload.wikimedia.org/wikipedia/en/f/f1/Cloverfield_theatrical_poster.jpg',
 	// 	ranks: [
 	// 		{
 	// 			name: 'Jackson',
@@ -795,15 +869,15 @@ const MoviesList: Movie[] = [
 	// 	],
 	// 	links: [
 	// 		// {
-	// 		// 	url :'',
+	// 		// 	url: '',
 	// 		// 	iconClasses: 'fab fa-youtube',
 	// 		// },
 	// 		{
-	// 			url: 'https://www.imdb.com/title/tt0049366',
+	// 			url: 'https://www.imdb.com/title/tt1060277',
 	// 			iconClasses: 'fab fa-imdb',
 	// 		},
 	// 		{
-	// 			url: 'https://www.rottentomatoes.com/m/1010678-invasion_of_the_body_snatchers',
+	// 			url: 'https://www.rottentomatoes.com/m/cloverfield',
 	// 			iconClasses: 'fas fa-tomato',
 	// 		}
 	// 	],
